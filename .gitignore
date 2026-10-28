@@ -14,3 +14,4 @@ frontend/dist/
 # Cloudflare
 .wrangler/
 .dev.vars
+*.tsbuildinfo
