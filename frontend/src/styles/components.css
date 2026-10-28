@@ -1,0 +1,171 @@
+/* Component-specific styles */
+
+/* Search */
+.search {
+  margin-bottom: 20px;
+}
+
+.search__row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.search__input,
+.search__select {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  color: var(--text);
+  font: inherit;
+  padding: 10px 14px;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.search__input {
+  flex: 1 1 260px;
+  min-width: 0;
+}
+
+.search__input--small {
+  flex: 0 1 220px;
+  padding: 7px 12px;
+}
+
+.search__input:focus,
+.search__select:focus {
+  border-color: var(--primary);
+}
+
+.search__hint {
+  margin: 10px 0 0;
+  color: var(--text-muted);
+  font-size: 0.88rem;
+}
+
+/* Channel header */
+.channel {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.channel__avatar {
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 2px solid var(--border);
+}
+
+.channel__title-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.channel__title {
+  margin: 0;
+  font-size: 1.35rem;
+}
+
+.channel__handle {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.channel__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 18px;
+  margin-top: 6px;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.channel__meta strong {
+  color: var(--text);
+}
+
+/* Stat cards */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--gap);
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.stat__label {
+  color: var(--text-muted);
+  font-size: 0.88rem;
+}
+
+.stat__value {
+  font-size: 1.9rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  font-variant-numeric: tabular-nums;
+}
+
+.stat__hint {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+}
+
+/* Charts */
+.chart-wrap {
+  width: 100%;
+  margin-inline: -8px;
+}
+
+/* Shorts vs long */
+.compare {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.compare__head {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.compare__label {
+  font-weight: 700;
+}
+
+.compare__meta,
+.compare__value {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+.bar-track {
+  height: 12px;
+  background: var(--surface-2);
+  border-radius: 999px;
+  overflow: hidden;
+  margin-bottom: 4px;
+}
+
+.bar {
+  height: 100%;
+  border-radius: 999px;
+  transition: width 0.5s ease;
+}
+
+.bar--primary {
+  background: var(--primary);
+}
+
+.bar--secondary {
+  background: var(--secondary);
+}
